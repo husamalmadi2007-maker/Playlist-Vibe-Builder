@@ -97,24 +97,23 @@ Open `http://127.0.0.1:7860` in your browser.
 
 ## Hugging Face Link
 
-> Add your Hugging Face Space URL here after deploying.
-> Example: `https://huggingface.co/spaces/husamalmadi2007-maker/playlist-vibe-builder`
+https://huggingface.co/spaces/husamalmadi2007-maker/playlist-vibe-builder
 
 ## Testing
 
 | Test case | Input | Expected | Actual | Pass? |
 |-----------|-------|----------|--------|-------|
-| Default playlist, sort by energy | 8 songs, energy key | Ascending energy (43 → 91) | Correct, 23 merge steps | ✅ |
-| Default playlist, sort by duration | 8 songs, duration key | Ascending duration (137s → 242s) | Correct | ✅ |
-| Two songs only | 2 songs | Sorted by 1 comparison | Works | ✅ |
-| Already sorted input | Songs in ascending order | Same order returned | Stable, preserved | ✅ |
-| Reverse-sorted input | Songs in descending order | Fully reversed | Correctly sorted | ✅ |
-| All same energy | All energy=50 | Original order preserved | Preserved | ✅ |
-| Missing field | Song with no `energy` key | Clear error message | "❌ Energy must be a number…" | ✅ |
-| Energy out of range | `"energy": 150` | Clear error message | "❌ Energy must be 0–100. Got 150" | ✅ |
-| Invalid JSON | `{not valid}` | JSON parse error | "❌ JSON parse error: …" | ✅ |
-| Only 1 song | Single song array | Error shown | "❌ Need at least 2 songs to sort." | ✅ |
-| Empty array | `[]` | Error shown | "❌ Playlist is empty." | ✅ |
+| Default playlist, sort by energy | 8 songs, energy key | Ascending energy (43 → 91) | Correct, 23 merge steps | √ |
+| Default playlist, sort by duration | 8 songs, duration key | Ascending duration (137s → 242s) | Correct | √ |
+| Two songs only | 2 songs | Sorted by 1 comparison | Works | √ |
+| Already sorted input | Songs in ascending order | Same order returned | Stable, preserved | √ |
+| Reverse-sorted input | Songs in descending order | Fully reversed | Correctly sorted | √ |
+| All same energy | All energy=50 | Original order preserved | Preserved | √ |
+| Missing field | Song with no `energy` key | Clear error message | "X Energy must be a number…" | √ |
+| Energy out of range | `"energy": 150` | Clear error message | "X Energy must be 0–100. Got 150" | √ |
+| Invalid JSON | `{not valid}` | JSON parse error | "X JSON parse error: …" | √ |
+| Only 1 song | Single song array | Error shown | "X Need at least 2 songs to sort." | √ |
+| Empty array | `[]` | Error shown | "X Playlist is empty." | √ 
 
 ## Author & AI Acknowledgment
 
