@@ -26,8 +26,8 @@ Merge Sort fits this problem because:
 
 ## Demo
 
-> Add your screenshot here after taking it.
-> Example: `![App Screenshot](screenshot.png)`
+<img width="1251" height="838" alt="Screenshot 2026-04-20 at 12 27 17 AM" src="https://github.com/user-attachments/assets/7832278f-8042-4b49-94e7-8b23804d3d41" />
+
 
 Example output — sort by **energy**, default 8-song playlist:
 
